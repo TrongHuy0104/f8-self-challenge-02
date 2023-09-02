@@ -279,3 +279,57 @@ a {
 .hero__img:nth-child(2) {
     margin-top: 77px;
 }
+
+/* Client */
+.client {
+    margin: 65px 0 53px;
+    padding-top: 65px;
+}
+
+.client__list {
+    height: 201px;
+    border-radius: 999px;
+    background-color: var(--secondary-color-light-green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 122px;
+}
+
+.client-item {
+    display: flex;
+    align-items: center;
+}
+
+.client-item__title {
+    color: var(--primary-color-black-green);
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.client-item__title--google {
+    font-size: 3.1rem;
+    font-weight: 500;
+}
+
+.client-item__title--slack {
+    margin-left: 4px;
+}
+
+.client-item__title--agworld {
+    color: #163c35;
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.client-item__title--riotinto {
+    font-family: "Sonsie One", cursive;
+    font-size: 2.3rem;
+}
+
+.client-item__title--heroku {
+    margin-left: 10px;
+    font-size: 1.9rem;
+    letter-spacing: 1.995px;
+}
