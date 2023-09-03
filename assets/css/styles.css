@@ -8,6 +8,8 @@
     --primary-color-black: #152427;
     --primary-color-black-green: #143c3c;
     --secondary-color-light-green: #e2eddf;
+    --secondary-color-blue: #83a17d;
+    --secondary-color-gray: #6a8383;
     --text-color-light-gray: #7d8188;
 }
 
@@ -83,6 +85,13 @@ a {
     font-weight: 600;
     line-height: 1.24;
     position: relative;
+}
+
+.section-desc {
+    color: var(--text-color-light-gray);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62;
 }
 
 /* Header */
@@ -382,7 +391,8 @@ a {
 }
 
 .service__heading::after,
-.process__heading::after {
+.process__heading::after,
+.project__heading::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -631,10 +641,6 @@ a {
 
 /* About Content */
 .about__desc {
-    color: var(--text-color-light-gray);
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.62;
     margin-top: 11px;
 }
 
@@ -776,4 +782,87 @@ a {
     line-height: 1.56;
     max-width: 572px;
     margin-left: auto;
+}
+
+/* Project */
+
+.project {
+    margin-top: 110px;
+    padding: 116px 130px 63px;
+    background-color: var(--primary-color-black-green);
+    position: relative;
+}
+
+.project__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 93px;
+}
+
+.project__heading {
+    color: #e7f9f9;
+    max-width: 457px;
+}
+
+.project__heading::after {
+    background-color: var(--secondary-color-blue);
+    left: 294px;
+    right: 0;
+}
+
+.project__desc {
+    color: var(--secondary-color-gray, #6a8383);
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+    margin-bottom: 13px;
+}
+
+.project__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.project__link:hover .project__link-text {
+    text-decoration: underline;
+}
+
+.project__link:hover .project__link-icon {
+    color: var(--color-white);
+}
+
+.project__link-text {
+    color: var(--color-white);
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.project__link-icon {
+    color: #80a07b;
+}
+
+.project__decor {
+    position: absolute;
+}
+
+.project__decor:first-of-type {
+    top: 208px;
+    right: 130px;
+}
+
+.project__decor:last-of-type {
+    top: 120px;
+    right: 124px;
+}
+
+.video {
+    width: 100%;
+    height: 544px;
+    margin-top: 65px;
+    border-radius: 22px;
+    overflow: hidden;
 }
